@@ -1,1 +1,1 @@
-GET http://localhost:3333
+POST  http://localhost:3333/hello

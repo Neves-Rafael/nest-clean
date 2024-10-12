@@ -35,7 +35,8 @@
         "noBannedTypes": "off",
         "noStaticOnlyClass": "off",
         "noForEach": "off",
-        "noThisInStatic": "off"
+        "noThisInStatic": "off",
+        "noUselessConstructor": "off"
       }
     }
   },
