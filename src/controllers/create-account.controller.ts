@@ -4,7 +4,6 @@ import { PrismaService } from "src/prisma/prisma.service";
 import { hash } from "bcryptjs";
 import { z } from "zod";
 import { ZodValidationPipe } from "src/pipes/zod-validation-pipe";
-import { fromZodError } from "zod-validation-error";
 
 const createAccountBodySchema = z.object({
   name: z.string(),
