@@ -15,8 +15,12 @@
       "quoteStyle": "double",
       "semicolons": "always",
       "trailingCommas": "es5"
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
     }
   },
+
   "linter": {
     "enabled": true,
     "rules": {
