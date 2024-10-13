@@ -45,6 +45,6 @@
     }
   },
   "files": {
-    "ignore": ["node_modules", "build", "dist"]
+    "ignore": ["node_modules", "build", "dist", ".env"]
   }
 }
