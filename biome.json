@@ -29,19 +29,19 @@
         "noUnusedImports": "error"
       },
       "suspicious": {
-        "noEmptyInterface": "off",
-        "noExplicitAny": "off",
+        "noEmptyInterface": "error",
+        "noExplicitAny": "error",
         "noMisleadingCharacterClass": "off"
       },
       "style": {
         "useImportType": "off"
       },
       "complexity": {
-        "noBannedTypes": "off",
+        "noBannedTypes": "error",
         "noStaticOnlyClass": "off",
         "noForEach": "off",
         "noThisInStatic": "off",
-        "noUselessConstructor": "off"
+        "noUselessConstructor": "error"
       }
     }
   },

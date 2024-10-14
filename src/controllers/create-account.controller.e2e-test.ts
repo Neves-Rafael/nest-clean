@@ -1,7 +1,7 @@
 import { INestApplication } from "@nestjs/common";
-import { AppModule } from "../app.module";
 import { Test } from "@nestjs/testing";
 import request from "supertest";
+import { AppModule } from "../app.module";
 import { PrismaService } from "../prisma/prisma.service";
 
 describe("Create account(E2E)", () => {
