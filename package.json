@@ -2,16 +2,22 @@
   "name": "nest-clean",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Rafael Neves (nevesrafael.dev@gmail.com)",
   "private": true,
   "license": "UNLICENSED",
+  "type": "module",
   "scripts": {
     "build": "nest build",
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "format": "prettier --write \"src **/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main"
+    "start:prod": "node dist/main",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:cov": "vitest run --coverage",
+    "test:debug": "vitest --inspect-brk --inspect --logHeapUsage --threads=false",
+    "test:e2e": "vitest run --config ./vitest.config.e2e.ts"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
@@ -33,14 +39,22 @@
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
+    "@swc/core": "1.7.35",
     "@types/bcryptjs": "2.4.6",
     "@types/express": "^4.17.17",
     "@types/node": "^20.3.1",
     "@types/passport-jwt": "4.0.1",
+    "@types/supertest": "6.0.2",
+    "@vitest/coverage-v8": "2.1.3",
+    "dotenv": "16.4.5",
     "prisma": "5.20.0",
     "source-map-support": "^0.5.21",
+    "supertest": "7.0.0",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.1.3"
+    "typescript": "^5.1.3",
+    "unplugin-swc": "1.5.1",
+    "vite-tsconfig-paths": "5.0.1",
+    "vitest": "2.1.3"
   }
 }
