@@ -30,7 +30,8 @@
       },
       "suspicious": {
         "noEmptyInterface": "off",
-        "noExplicitAny": "off"
+        "noExplicitAny": "off",
+        "noMisleadingCharacterClass": "off"
       },
       "style": {
         "useImportType": "off"

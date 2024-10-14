@@ -28,4 +28,20 @@ Content-Type: application/json
 POST {{baseUrl}}/questions
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
+
+{
+  "title": "Question example3",
+  "content": "Content question2"
+}
+
 ###
+
+# @name fetch_recent_questions
+GET {{baseUrl}}/questions?page=2
+Authorization: Bearer {{authToken}}
+
+###
+
+# @name fetch_all_recent_questions
+GET {{baseUrl}}/questions/all
+Authorization: Bearer {{authToken}}
