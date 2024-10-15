@@ -1,5 +1,5 @@
-import { InMemoryStudentRepository } from "test/repositories/in-memory-students-repository";
 import { FakeHasher } from "test/cryptography/fake-hasher";
+import { InMemoryStudentRepository } from "test/repositories/in-memory-students-repository";
 import { RegisterStudentUseCase } from "./register-student";
 
 let inMemoryStudentsRepository: InMemoryStudentRepository;
